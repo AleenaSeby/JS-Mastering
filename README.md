@@ -32,3 +32,10 @@ If you try to access a property that doesn’t exist on the object, JavaScript w
 
 * -> The Object.assign method is used to copy all the properties from one or more source objects and stores them into a target object. This is mainly used for cloning and merging.
 * -> A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
+* -> `call, apply, and bind`
+
+*-> `JSON (JavaScript Object Notation)` is a lightweight, text-based data format that uses JavaScript object syntax for structuring data. It was popularized by Douglas Crockford and is widely used for transmitting data between a server and a client in web applications.
+* -> The` slice()` method does not mutate (change) the original array; instead, it returns a new array containing the extracted elements.
+*->  `splice()` modifies the original array in place and returns an array containing the removed elements.
+
+`array.splice(start, deleteCount, item1, item2, ...)` - > You can use it both to remove and insert elements in a single operation.
