@@ -39,3 +39,13 @@ If you try to access a property that doesn’t exist on the object, JavaScript w
 *->  `splice()` modifies the original array in place and returns an array containing the removed elements.
 
 `array.splice(start, deleteCount, item1, item2, ...)` - > You can use it both to remove and insert elements in a single operation.
+
+`Maps in JavaScript`
+
+A Map is a built-in object introduced in ES6 that is designed specifically for key–value storage.
+
+Keys can be of any type (objects, functions, primitives).
+
+Keeps insertion order of keys.
+
+Has useful built-in methods.
