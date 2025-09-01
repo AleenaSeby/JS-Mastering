@@ -22,5 +22,13 @@ A prototype is itself an object, used as a blueprint for other objects.
 `Prototype chain = JS looks up properties through a chain of objects until it finds it (or reaches null).`
 
 If you try to access a property that doesn’t exist on the object, JavaScript will look for it in the prototype chain.
+
+`*The prototype chain enables inheritance in JavaScript.
+*If a property isn’t found on an object, JavaScript looks up its prototype chain.
+*The prototype of an object instance can be accessed with Object.getPrototypeOf(obj) or __proto__.
+*The prototype of a constructor function is available via Constructor.prototype.
+*The chain ends when the prototype is null.`
+
+
 * -> The Object.assign method is used to copy all the properties from one or more source objects and stores them into a target object. This is mainly used for cloning and merging.
 * -> A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance. This way one can ensure that they don't accidentally create multiple instances.
