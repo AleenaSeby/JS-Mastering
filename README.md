@@ -68,5 +68,6 @@ NaN === NaN           // false
 ###  lambda expressions or arrow functions - >  shorter and more readable, especially for simple operations or callbacks.
 
 ### first-class function/ citizens, You can assign a function to a variable.
-### You can pass a function as an argument to another function.
-### You can return a function from another function.
+##### You can pass a function as an argument to another function.
+##### You can return a function from another function.
+### A first-order function is a function that does not take another function as an argument and does not return another function.
