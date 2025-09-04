@@ -65,8 +65,8 @@ NaN === NaN           // false
 {} == {}              // false     (different object references)
 {} === {}             // false
 
-#  lambda expressions or arrow functions - >  shorter and more readable, especially for simple operations or callbacks.
+###  lambda expressions or arrow functions - >  shorter and more readable, especially for simple operations or callbacks.
 
-# first-class function/ citizens, You can assign a function to a variable.
-# You can pass a function as an argument to another function.
-# You can return a function from another function.
+### first-class function/ citizens, You can assign a function to a variable.
+### You can pass a function as an argument to another function.
+### You can return a function from another function.
