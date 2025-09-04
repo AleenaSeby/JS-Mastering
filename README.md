@@ -50,7 +50,7 @@ Keeps insertion order of keys.
 
 Has useful built-in methods.
 
-`0 == false            // true      (loose equality, type coercion)
+0 == false            // true      (loose equality, type coercion)
 0 === false           // false     (strict equality, different types)
 1 == "1"              // true      (string converted to number)
 1 === "1"             // false     (different types)
@@ -63,4 +63,4 @@ NaN === NaN           // false
 [] == []              // false     (different array objects)
 [] === []             // false
 {} == {}              // false     (different object references)
-{} === {}             // false`
+{} === {}             // false
