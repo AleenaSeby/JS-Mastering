@@ -182,3 +182,12 @@ console.log(curryUnaryFunction(1)(2)(3)); // Output: 6
 - May return different outputs for the same inputs.  
 - Has side effects (modifies external state, logs to console, changes global variables, DOM, database, etc.).  
 
+###  let - block-scoped local variable.
+### var - function-scoped (or globally-scoped if declared outside a function)
+| Feature           | `var`                                | `let`                                                |
+| ----------------- | ------------------------------------ | ---------------------------------------------------- |
+| **Scope**         | Function-scoped                      | Block-scoped (`{}`)                                  |
+| **Hoisting**      | Hoisted & initialized as `undefined` | Hoisted but **not initialized** (Temporal Dead Zone) |
+| **Redeclaration** | Can be redeclared in the same scope  | Cannot be redeclared in the same scope               |
+| **Reassignment**  | Allowed                              | Allowed                                              |
+| **Best Use**      | Legacy code (avoid if possible)      | Modern JS (preferred)                                |
