@@ -67,7 +67,23 @@ NaN === NaN           // false
 
 ###  lambda expressions or arrow functions - >  shorter and more readable, especially for simple operations or callbacks.
 
-### first-class function/ citizens, You can assign a function to a variable.
+### first-class function/ citizens, 
+##### You can assign a function to a variable.
 ##### You can pass a function as an argument to another function.
 ##### You can return a function from another function.
 ### A first-order function is a function that does not take another function as an argument and does not return another function.
+### A higher-order function is a function that either accepts another function as an argument, returns a function as its result, or both.
+### A unary function (also known as a monadic function) is a function that accepts exactly one argument. 
+### Currying is the process of transforming a function with multiple arguments into a sequence of nested functions, each accepting only one argument at a time.
+
+👉 A pure function is a function that:
+
+Always returns the same output for the same input.
+
+Has no side effects (doesn’t modify external state, global variables, DOM, API calls, etc.).
+
+👉 An impure function is a function that:
+
+May return different outputs for the same inputs.
+
+Has side effects (modifies external state, logs to console, changes global variables, DOM, database, etc.
