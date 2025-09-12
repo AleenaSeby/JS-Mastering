@@ -163,7 +163,13 @@ Here, multiplier returns a function → closure is formed.
 - **Higher-order function** → either accepts another function as an argument, returns a function as its result, or both.  
 - **Unary function (monadic)** → a function that accepts exactly one argument.  
 - **Currying** → process of transforming a function with multiple arguments into a sequence of nested functions, each accepting only one argument at a time.  
+```
+const curryUnaryFunction = (a) => (b) => (c) => a + b + c;
 
+console.log(curryUnaryFunction(1));       // Returns: function (b) => ...
+console.log(curryUnaryFunction(1)(2));    // Returns: function (c) => ...
+console.log(curryUnaryFunction(1)(2)(3)); // Output: 6
+```
 ---
 
 ### Pure vs Impure Functions  
