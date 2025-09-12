@@ -191,3 +191,54 @@ console.log(curryUnaryFunction(1)(2)(3)); // Output: 6
 | **Redeclaration** | Can be redeclared in the same scope  | Cannot be redeclared in the same scope               |
 | **Reassignment**  | Allowed                              | Allowed                                              |
 | **Best Use**      | Legacy code (avoid if possible)      | Modern JS (preferred)                                |
+###  Temporal Dead Zone (TDZ) - period between the start of a block and the point where a variable declared with let or const is initialized. During this time, the variable exists in scope but cannot be accessed, and attempting to do so results in a ReferenceError.
+
+### IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. The signature of it would be as below,
+The primary reason to use an IIFE is to obtain data privacy because any variables declared within the IIFE cannot be accessed by the outside world.
+```
+(function () {
+  // logic here
+})();
+```
+
+**Memoization** is a functional programming technique which attempts to increase a function’s performance by caching its previously computed results. 
+**Hoisting** is a JavaScript mechanism where variables, function declarations and classes are moved to the top of their scope before code execution.
+
+### A closure is formed when an inner function “remembers” the variables from its outer function’s scope, even after the outer function has finished running.
+```
+function outer() {
+  let count = 0; // variable in outer scope
+
+  function inner() {
+    count++;
+    console.log(count);
+  }
+
+  return inner;
+}
+
+const counter = outer(); // outer() returns inner function
+counter(); // 1
+counter(); // 2
+counter(); // 3
+```
+✅ Here’s what happens:
+outer() runs once and returns inner.
+Normally, count would be gone when outer() finishes.
+But because inner closes over count, it still “remembers” it.
+This is a closure.
+
+🔹 What is a Service Worker?
+A Service Worker is a script that runs in the background of your browser, separate from the web page.
+It acts like a proxy between your web app, the network, and the cache.
+It lets you control how network requests are handled (e.g., cache first, network first).
+👉 Think of it as a behind-the-scenes helper that can:
+Make your app work offline
+Cache files for faster loading
+Handle push notifications
+Do background sync
+🔹 Life Cycle of a Service Worker
+Register → Your page tells the browser to use a service worker.
+Install → The service worker is downloaded and cached.
+Activate → It takes control of the page.
+Listen → It intercepts requests (like fetch, push, sync).
