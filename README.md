@@ -69,8 +69,42 @@ NaN === NaN           // false
 
 ### first-class function/ citizens, 
 ##### You can assign a function to a variable.
+`const greet = function(name) {
+  return "Hello, " + name;
+};
+
+console.log(greet("Aleena")); // Hello, Aleena`
 ##### You can pass a function as an argument to another function.
+`function sayHello() {
+  return "Hello!";
+}
+
+function greet(fn) {
+  console.log(fn()); 
+}
+
+greet(sayHello);  // "Hello!"`
 ##### You can return a function from another function.
+'function multiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5)); // 10`
+Here, multiplier returns a function → closure is formed.
+Why is This Important?
+
+Because of first-class functions, JavaScript supports:
+
+Callbacks (functions passed as arguments).
+
+Higher-order functions (functions that take/return other functions).
+
+Functional programming patterns (map, filter, reduce).
+
+Async programming (promises, async/await use callbacks under the hood).
 ### A first-order function is a function that does not take another function as an argument and does not return another function.
 ### A higher-order function is a function that either accepts another function as an argument, returns a function as its result, or both.
 ### A unary function (also known as a monadic function) is a function that accepts exactly one argument. 
